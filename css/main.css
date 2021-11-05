@@ -1,1 +1,138 @@
 @charset "UTF-8";
+
+/* 동영상 */
+#content_media {
+      height: 700px;
+      background: #555;
+}
+
+/* #content_media > .video_container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+}
+#content_media > .video_container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+} */
+
+/* 스토리 */
+#content_story {
+      width: 960px;
+      margin: 50px auto 80px;
+      background: #fff;
+}
+
+#content_story > .story-area > .item {
+      display: inline-block;
+}
+
+#content_story > .story-caption {
+      margin-bottom: 40px;
+}
+
+#content_story > .story-caption > h1 {
+      font-size: 100px;
+      color: rgb(255, 0, 0, .7);
+      text-align: center;
+}
+
+#content_story > .story-caption > span {
+      display: block;
+      font-size: 30px;
+      color: #888;
+      text-align: center;
+}
+
+#content_story > .story-area > .item {
+      margin: 0 5px;
+}
+
+#content_story > .story-area > .item > p {
+      color: #222;
+      font-size: 20px;
+}
+
+/* 상품 */
+#content_products {
+      height: 600px;
+      background: rgb(159, 78, 20, .4);
+}
+
+#content_products > .products-caption > h1 {
+      color: #fff;
+}
+
+#content_products > .products-caption > span {
+      color: #fff;
+}
+
+/* 커뮤니티 */
+#content_community {
+      height: 600px;
+      background: #fff;
+}
+
+#content_community > .community-caption > h1 {
+      color: #222;
+}
+
+#content_community > .community-caption > span {
+      color: #222;
+}
+
+#content_community .swiper-container {
+      height: 500px;
+}
+
+#content_community .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      position: relative;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+}
+
+#content_community .swiper-slide > img {
+      display: block;
+      width: 100%;
+}
+
+#content_community .swiper-slide > span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: #222;
+      height: 200px;
+      display: block;
+}
+
+/* 컨텐츠 info */
+#content_info {
+      height: 400px;
+      background: #333;
+}
+
+#content_info > .info-item {
+      display: inline-block;
+}
+
+#content_info > .info-item > h5, p {
+      color: #fff;
+}

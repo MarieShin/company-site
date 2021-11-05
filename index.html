@@ -5,6 +5,8 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>동수식품</title>
+      <link rel="stylesheet" href="./library/swiper.css">
+      <link rel="stylesheet" href="./library/fontawesome-free-5.15.4-web/css/all.css">
       <link rel="stylesheet" href="./css/common.css">
       <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -28,9 +30,13 @@
                         </ul>
                         <ul class="right">
                               <li><a href="#">ENG</a></li>
-                              <li><a href="#">찾기</a></li>
-                              <li><a href="#">로그인</a></li>
+                              <li class="icon"><a href="#"><i class="fas fa-search fa-lg"><span class="blind">찾기</span></i></a></li>
+                              <li class="icon"><a href="#"><i class="fas fa-user fa-lg"><span class="blind">로그인</span></i></a></li>
                         </ul>
+                  </div>
+                  <div class="trigger">
+                        <a class="mobile menu" href="#"><i class="fas fa-bars fa-lg"><span class="blind">메뉴버튼</span></i></a>
+                        <a class="mobile close" href="#"><i class="fas fa-times fa-lg"><span class="blind">닫기버튼</span></i></a>
                   </div>
             </nav>
             <div class="lnb_container">
@@ -60,42 +66,117 @@
       </header>
       <!-- 미디어 -->
       <section id="content_media">
-            유튜브 자리
+            <div class="video_container">
+                  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/zXqVIS89qLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            </div>
       </section>
       <!-- 컨텐츠 story -->
       <section id="content_story">
-            스토리 자리
+            <div class="story-caption">
+                  <h1>STORY</h1>
+                  <span>생활 속에 향기를 드리는 기업, 동수식품입니다.</span>
+            </div>
+            <div class="story-area">
+                  <div class="item">
+                        <img src="https://via.placeholder.com/300" alt="임시 이미지">
+                        <span></span>
+                        <p>국내 커피 부문 1위<br/>국내 최초 캔커피 개발</p>
+                  </div>
+                  <div class="item">
+                        <img src="https://via.placeholder.com/300" alt="임시 이미지">
+                        <p>국내 커피 부문 1위<br/>국내 최초 캔커피 개발</p>
+                  </div>
+                  <div class="item">
+                        <img src="https://via.placeholder.com/300" alt="임시 이미지">
+                        <p>국내 커피 부문 1위<br/>국내 최초 캔커피 개발</p>
+                  </div>
+            </div>
       </section>
       <!-- 컨텐츠 products -->
       <section id="content_products">
-            상품 자리
+            <div class="products-caption">
+                  <h1>PRODUCTS</h1>
+                  <span>늘 고객을 생각하는 마음으로 우수한 품질의 제품을 만듭니다.</span>
+            </div>
+            <div></div>
       </section>
       <!-- 컨텐츠 community -->
       <section id="content_community">
-            커뮤니티 자리
+            <div class="community-caption">
+                  <h1>COMMUNITY</h1>
+                  <span>동수식품의 이야기를 만나보세요.</span>
+            </div>
+            <div class="swiper-container communi-slider">
+                  <div class="swiper-wrapper">
+                        <div class="swiper-slide slider1">
+                              <img src="https://via.placeholder.com/250" alt="임시 이미지">
+                              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nulla quae laboriosam eius inventore aliquid accusantium molestiae tempora aspernatur voluptatibus veritatis recusandae ullam, cum minima ratione dicta amet quibusdam. Ratione!</span>
+                        </div>
+                        <div class="swiper-slide slider2">
+                              <img src="https://via.placeholder.com/250" alt="임시 이미지">
+                              <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores eligendi, sint sed reprehenderit provident unde vel voluptatum praesentium! Possimus vel omnis porro perspiciatis optio minus quis illum dicta harum reprehenderit?</span>
+                        </div>
+                        <div class="swiper-slide slider3">
+                              <img src="https://via.placeholder.com/250" alt="임시 이미지">
+                              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolor omnis animi magni. Ullam libero distinctio saepe nemo nam molestiae voluptates provident repellendus adipisci praesentium ut sequi, ipsa quasi ipsam?</span>
+                        </div>
+                        <div class="swiper-slide slider5">
+                              <img src="https://via.placeholder.com/250" alt="임시 이미지">
+                              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates similique accusamus molestiae fugiat voluptatum laudantium cupiditate. Distinctio quaerat, ab placeat doloribus esse libero maxime, rem in accusantium excepturi voluptatem.</span>
+                        </div>
+                        <div class="swiper-slide slider6">
+                              <img src="https://via.placeholder.com/250" alt="임시 이미지">
+                              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laboriosam excepturi nihil, officiis, ipsum dolore id iste cum quas asperiores velit odio, corporis perspiciatis eos ut beatae pariatur voluptatem architecto.</span>
+                        </div>
+                        <div class="swiper-slide slider4">
+                              <img src="https://via.placeholder.com/250" alt="임시 이미지">
+                              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non numquam incidunt maiores aspernatur, vero sint veritatis mollitia nam velit ipsa blanditiis quidem earum illo ad hic perferendis fugit ab.</span>
+                        </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next swiper-button-black"></div>
+                  <div class="swiper-button-prev swiper-button-black"></div>
+            </div>
       </section>
       <!-- 컨텐츠 info -->
       <section id="content_info">
-            정보 자리
+            <div class="info-item">
+                  <img src="https://via.placeholder.com/50" alt="임시 이미지">
+                  <h5>NOTICE</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus nihil, quas voluptatibus, dignissimos voluptas inventore autem quidem qui, hic repudiandae optio odit? Mollitia repellendus, aliquid unde laboriosam fugit illum.</p>
+            </div>
+            <div class="info-item">
+                  <img src="https://via.placeholder.com/50" alt="임시 이미지">
+                  <h5>NOTICE</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus nihil, quas voluptatibus, dignissimos voluptas inventore autem quidem qui, hic repudiandae optio odit? Mollitia repellendus, aliquid unde laboriosam fugit illum.</p>
+            </div>
+            <div class="info-item">
+                  <img src="https://via.placeholder.com/50" alt="임시 이미지">
+                  <h5>NOTICE</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus nihil, quas voluptatibus, dignissimos voluptas inventore autem quidem qui, hic repudiandae optio odit? Mollitia repellendus, aliquid unde laboriosam fugit illum.</p>
+            </div>
       </section>
       <!-- 푸터 -->
       <footer id="main_footer">
-            <div>
+            <div class="address">
                   [부평공장]인천시 부평구 xx로 xxx<br/>
                   [서울사무소]서울시 마포구 xx로 xxx<br/>
                   대표번호 xxxx-xxxx
             </div>
-            <div>
+            <div class="info">
                   개인 포트폴리오로 동서식품과 관련이 없습니다.<br/>
                   동서식품을 참고하였습니다.
             </div>
-            <div>
-                  페이스북
-                  트위터
-                  인스타그램
+            <div class="sns">
+                  <a class="sns-icon" href="#"><i class="fab fa-instagram fa-2x"><span class="blind">인스타아이콘</span></i></a>
+                  <a class="sns-icon" href="#"><i class="fab fa-youtube fa-2x"><span class="blind">유튜브아이콘</span></i></a>
             </div>
       </footer>
 
+<!-- library -->
+<script src="./library/jquery-3.6.0.min.js"></script>
+<script src="./library/swiper.min.js"></script>
+<!-- js -->
 <script src="./js/main.js"></script>
 </body>
 </html>
