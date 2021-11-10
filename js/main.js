@@ -15,6 +15,7 @@
 //       // loop: true,
 // });
 
+var brand_name = ["맥심", "맥스웰하우스", "카누", "맥심티오피", "Frima", "현미녹차", "미떼", "포스트", "오레오", "필라델피아"];
 
 var swiper_communi = new Swiper('.products-slider', {
       navigation: {
@@ -24,9 +25,19 @@ var swiper_communi = new Swiper('.products-slider', {
       pagination: {
             el: '.swiper-pagination',
             clickable: true,
-            dymanmicBullets: true
+            renderBullet: function (index, className) {
+                  return '<span class="' + className + '">' + (brand_name[index]) + '</span>';
+            },
       },
-      // loop: true,
+      effect: 'fade',
+      fadeEffect: {
+            crossFade: true
+      },
+      autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+      },
+      speed: 1500,
 });
 
 // slick slider
