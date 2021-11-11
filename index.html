@@ -18,7 +18,7 @@
             <nav id="gnb_container">
                   <div class="logo"><img src="./images/logo_m.png" alt="로고 이미지"></div>
                   <div class="main_gnb">
-                        <ul>
+                        <ul class="gnb">
                               <li><a href="#">회사소개</a></li>
                               <li><a href="#">제품소개</a></li>
                               <li><a href="#">홍보센터</a></li>
@@ -41,28 +41,33 @@
                         <a class="mobile close" href="#"><i class="fas fa-times fa-lg"><span class="blind">닫기버튼</span></i></a>
                   </div>
             </nav>
+            <div class="active_path">
+                  <div class="active_bar"></div>
+            </div>
             <div class="lnb_container">
-                  <div class="lnb">
-                        <div>동서식품</div>
-                        <div>연혁</div>
-                        <div>글로벌 동서식품</div>
-                        <div>투자정보</div>
-                        <div>오시는 길</div>
-                  </div>
-                  <div class="lnb">
-                        <div>신제품</div>
-                        <div>브랜드</div>
-                        <div>제품소개</div>
-                  </div>
-                  <div class="lnb">
-                        <div>뉴스</div>
-                        <div>이벤트</div>
-                        <div>CF</div>
-                  </div>
-                  <div class="lnb">
-                        <div>FAQ</div>
-                        <div>공지사항</div>
-                        <div>기타문의</div>
+                  <div class="wrap_lnb">
+                        <div class="lnb">
+                              <div>동서식품</div>
+                              <div>연혁</div>
+                              <div>글로벌 동서식품</div>
+                              <div>투자정보</div>
+                              <div>오시는 길</div>
+                        </div>
+                        <div class="lnb">
+                              <div>신제품</div>
+                              <div>브랜드</div>
+                              <div>제품소개</div>
+                        </div>
+                        <div class="lnb">
+                              <div>뉴스</div>
+                              <div>이벤트</div>
+                              <div>CF</div>
+                        </div>
+                        <div class="lnb">
+                              <div>FAQ</div>
+                              <div>공지사항</div>
+                              <div>기타문의</div>
+                        </div>
                   </div>
             </div>
       </header>
@@ -98,9 +103,6 @@
       </section>
       <!-- 컨텐츠 products -->
       <section id="content_products">
-            <!-- <video muted autoplay loop>
-                  <source src="./images/pexels-mike-m-5991949.mp4" type="video/mp4">
-            </video> -->
             <div class="products-caption">
                   <h1>PRODUCTS</h1>
                   <span>늘 고객을 생각하는 마음으로 우수한 품질의 제품을 만듭니다.</span>
@@ -261,8 +263,8 @@
                   </div>
                   <!-- swiper pagination, navigation buttons -->
                   <div class="swiper-pagination"></div>
-                  <div class="swiper-button-next swiper-button-black"></div>
-                  <div class="swiper-button-prev swiper-button-black"></div>
+                  <!-- <div class="swiper-button-next swiper-button-black"></div> -->
+                  <!-- <div class="swiper-button-prev swiper-button-black"></div> -->
             </div>
       </section>
       <!-- 컨텐츠 community -->
@@ -271,157 +273,115 @@
                   <h1>COMMUNITY</h1>
                   <span>동서식품의 이야기를 만나보세요.</span>
             </div>
-            <!--<div class="swiper-container communi-slider">
-                  <div class="swiper-wrapper">
-                        <div class="swiper-slide slider1">
-                              <div class="slider-item">
-                                    <img src="./images/commu_img_01.jpg" alt="임시 이미지">
-                                    <div class="cm-caption">
-                                          <h5>사회공헌</h5>
-                                          <span>인생의 향기를 나누는<br />맥심 사람의 향기</span>
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="swiper-slide slider2">
-                              <div class="slider-item">
-                                    <img src="./images/commu_img_02.jpg" alt="임시 이미지">
-                                    <div class="cm-caption">
-                                          <h5>사회공헌</h5>
-                                          <span>인재를 양성하여<br />국가발전에 기여하는<br />동서식품 장학회</span>
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="swiper-slide slider3">
-                              <div class="slider-item">
-                                    <img src="./images/commu_img_03.jpg" alt="임시 이미지">
-                                    <div class="cm-caption">
-                                          <h5>뉴스</h5>
-                                          <span>동서식품,<br />신제품 '미떼 핫초코 민트초코'출시</span>
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="swiper-slide slider4">
-                              <div class="slider-item">
-                                    <img src="./images/commu_img_04.jpg" alt="임시 이미지">
-                                    <div class="cm-caption">
-                                          <h5>뉴스</h5>
-                                          <span>동서식품,<br />컵 커피에 '종이 빨대'도입</span>
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="swiper-slide slider5">
-                              <div class="slider-item">
-                                    <img src="https://via.placeholder.com/250" alt="임시 이미지">
-                                    <div class="cm-caption">
-                                          <h5>사회공헌</h5>
-                                          <span>인생의 향기를 나누는 맥심 사람의 향기</span>
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="swiper-slide slider6">
-                              <div class="slider-item">
-                                    <img src="https://via.placeholder.com/250" alt="임시 이미지">
-                                    <div class="cm-caption">
-                                          <h5>사회공헌</h5>
-                                          <span>인생의 향기를 나누는 맥심 사람의 향기</span>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-button-next swiper-button-black"></div>
-                  <div class="swiper-button-prev swiper-button-black"></div>
-            </div>-->
-
             <!-- slick slider plugin -->
             <div class="communi-slider">
                   <div class="slide-box slider1">
                         <div class="slider-item">
-                              <img src="./images/img_commu_01.jpg" alt="커뮤니티 이미지">
+                              <div class="card-img">
+                                    <img src="./images/img_commu_01_4x5.png" alt="커뮤니티 이미지">
+                              </div>
                               <div class="cm-caption">
                                     <h5>사회공헌</h5>
-                                    <span>인생의 향기를 나누는<br />맥심 사람의 향기</span>
+                                    <span>인생의 향기를 나누는 맥심 사람의 향기</span>
                               </div>
                         </div>
                   </div>
                   <div class="slide-box slider2">
                         <div class="slider-item">
-                              <img src="./images/img_commu_02.jpg" alt="커뮤니티 이미지">
-                              <div class="cm-caption">
-                                    <h5>사회공헌</h5>
-                                    <span>인재를 양성하여<br />국가 발전에 기여하는<br />동서식품 장학회</span>
+                              <div class="card-img">
+                                    <img src="./images/img_commu_02_4x5.png" alt="커뮤니티 이미지">
                               </div>
-                        </div>
-                  </div>
-                  <div class="slide-box slider6">
-                        <div class="slider-item">
-                              <img src="./images/img_commu_06.jpg" alt="커뮤니티 이미지">
                               <div class="cm-caption">
                                     <h5>사회공헌</h5>
-                                    <span>국내 바둑 최강자를 가리는<br />맥심커피배<br />입신최강전</span>
-                              </div>
-                        </div>
-                  </div>
-                  <div class="slide-box slider7">
-                        <div class="slider-item">
-                              <img src="./images/img_commu_08.jpg" alt="커뮤니티 이미지">
-                              <div class="cm-caption">
-                                    <h5>사회공헌</h5>
-                                    <span>여성들의 문학활동을 지원하는<br />삶의향기 동서문학상</span>
-                              </div>
-                        </div>
-                  </div>
-                  <div class="slide-box slider8">
-                        <div class="slider-item">
-                              <img src="./images/img_commu_09.jpg" alt="커뮤니티 이미지">
-                              <div class="cm-caption">
-                                    <h5>사회공헌</h5>
-                                    <span>어린이들의 생각과 꿈을<br />키울 수 있도록 독서 환경을<br />조성하는 사회공헌</span>
+                                    <span>인재를 양성하여 국가 발전에 기여하는 동서식품 장학회</span>
                               </div>
                         </div>
                   </div>
                   <div class="slide-box slider3">
                         <div class="slider-item">
-                              <img src="./images/img_product_view_01.png" alt="커뮤니티 이미지">
+                              <div class="card-img">
+                                    <img src="./images/img_commu_03_4x5.png" alt="커뮤니티 이미지">
+                              </div>
                               <div class="cm-caption">
-                                    <h5>뉴스</h5>
-                                    <span>동서식품,<br />신제품 '미떼 핫초코 민트초코'출시</span>
+                                    <h5>사회공헌</h5>
+                                    <span>국내 바둑 최강자를 가리는 맥심커피배 입신최강전</span>
                               </div>
                         </div>
                   </div>
                   <div class="slide-box slider4">
                         <div class="slider-item">
-                              <img src="./images/img_commu_07.png" alt="커뮤니티 이미지">
+                              <div class="card-img">
+                                    <img src="./images/img_commu_04_4x5.png" alt="커뮤니티 이미지">
+                              </div>
                               <div class="cm-caption">
-                                    <h5>뉴스</h5>
-                                    <span>동서식품,<br />컵 커피에 '종이 빨대'도입</span>
+                                    <h5>사회공헌</h5>
+                                    <span>여성들의 문학활동을 지원하는 삶의향기 동서문학상</span>
                               </div>
                         </div>
                   </div>
                   <div class="slide-box slider5">
                         <div class="slider-item">
-                              <img src="./images/img_product_view_02.png" alt="커뮤니티 이미지">
+                              <div class="card-img">
+                                    <img src="./images/img_commu_05_4x5.png" alt="커뮤니티 이미지">
+                              </div>
+                              <div class="cm-caption">
+                                    <h5>사회공헌</h5>
+                                    <span>어린이들의 생각과 꿈을 키울 수 있도록 독서 환경을 조성하는 사회공헌</span>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="slide-box slider6">
+                        <div class="slider-item">
+                              <div class="card-img">
+                                    <img src="./images/img_product_view_01.png" alt="커뮤니티 이미지">       
+                              </div>
                               <div class="cm-caption">
                                     <h5>뉴스</h5>
-                                    <span>동서식품,<br />신제품 시리얼 '포스트 듀오링 오즈'출시</span>
+                                    <span>동서식품, 신제품 '미떼 핫초코 민트초코'출시</span>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="slide-box slider7">
+                        <div class="slider-item">
+                              <div class="card-img">
+                                    <img src="./images/img_commu_07_4x5.png" alt="커뮤니티 이미지">
+                              </div>
+                              <div class="cm-caption">
+                                    <h5>뉴스</h5>
+                                    <span>동서식품, 컵 커피에 '종이 빨대'도입</span>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="slide-box slider8">
+                        <div class="slider-item">
+                              <div class="card-img">
+                                    <img src="./images/img_product_view_02.png" alt="커뮤니티 이미지">
+                              </div>
+                              <div class="cm-caption">
+                                    <h5>뉴스</h5>
+                                    <span>동서식품, 신제품 시리얼 '포스트 듀오링 오즈'출시</span>
                               </div>
                         </div>
                   </div>
                   <div class="slide-box slider9">
                         <div class="slider-item">
-                              <img src="https://via.placeholder.com/250" alt="커뮤니티 이미지">
+                              <div class="card-img">
+                                    <img src="./images/img_commu_09_4x5.png" alt="커뮤니티 이미지">
+                              </div>
                               <div class="cm-caption">
-                                    <h5>사회공헌</h5>
-                                    <span>인생의 향기를 나누는 맥심 사람의 향기</span>
+                                    <h5>뉴스</h5>
+                                    <span>동서식품, '맥심 티오피 Passion for the Green!(시작해요, 친환경을 향한 열정)'프로모션 진행</span>
                               </div>
                         </div>
                   </div>
                   <div class="slide-box slider10">
                         <div class="slider-item">
-                              <img src="https://via.placeholder.com/250" alt="커뮤니티 이미지">
+                              <div class="card-img">
+                                    <img src="./images/img_commu_10_4x5.png" alt="커뮤니티 이미지">
+                              </div>
                               <div class="cm-caption">
-                                    <h5>사회공헌</h5>
-                                    <span>인생의 향기를 나누는 맥심 사람의 향기</span>
+                                    <h5>뉴스</h5>
+                                    <span>동서식품, '맥심 티오피 심플리스무스 플라워 피니시' 2종 출시</span>
                               </div>
                         </div>
                   </div>

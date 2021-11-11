@@ -41,8 +41,6 @@ ul { list-style: none; }
 
 #main_header > #gnb_container > .main_gnb > ul {
       text-align: center;
-      position: sticky;
-      top: 0;
 }
 
 #main_header > #gnb_container > .main_gnb > ul > li {
@@ -112,9 +110,63 @@ ul { list-style: none; }
       display: none;
 }
 
-#main_header > .lnb_container {
+/* active_path, active bar */
+#main_header > .active_path { 
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #D8D8D8;
+      top: 120px; 
+      z-index: 1; 
+}
+
+#main_header > .active_path > .active_bar {
+      width: 160px;
+      height: 2px;
+      margin: 0px;
+      background: #ff0000b3;
       display: none;
 }
+
+
+/* 하위 메뉴 */
+#main_header > .lnb_container {
+      display: none;
+      background: #fff;
+      height: 330px;
+      width: 100%;
+      position: absolute;
+      top: 122px;
+      z-index: 1; 
+      margin: 0 auto;
+}
+
+#main_header > .lnb_container > .wrap_lnb {
+      overflow: hidden;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+}
+
+#main_header > .lnb_container > .wrap_lnb > .lnb {
+      overflow: hidden;
+      float: left;
+      width: 160px;
+      padding: 10px 0;
+      text-align: center;
+      display: none;
+}
+
+#main_header > .lnb_container > .wrap_lnb > .lnb > div {
+      padding: 5px 0;
+      font-size: 17px;
+      color: #666;
+}
+
+#main_header > .lnb_container > .wrap_lnb > .lnb > div:hover {
+      color: #ff0000b3;
+}
+
 
 /* 푸터 */
 #main_footer {
@@ -151,3 +203,40 @@ ul { list-style: none; }
 #main_footer > .sns .blind {
       display: none;
 }
+
+
+
+/* 미디어 쿼리 */
+/* PC , 테블릿 가로 (해상도 1024px ~ ) */ 
+@media all and (min-width:1024px) { 
+
+} 
+
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) { 
+
+} 
+
+/* 모바일 가로, 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) { 
+      #main_header {
+            height: 60px;
+      }
+      #main_header > #gnb_container > .main_gnb {
+            display: none;
+      }
+      #main_header > #gnb_container > .top_gnb {
+            display: none;
+      }
+      #main_header > #gnb_container > .logo {
+            text-align: left;
+            margin-left: 20px;
+      }
+      #main_header > #gnb_container > .trigger {
+            display: block;
+      }
+      #main_header > .active_path { 
+            display: none;
+      }
+
+} 
