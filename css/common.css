@@ -222,6 +222,9 @@ ul { list-style: none; }
       #main_header {
             height: 60px;
       }
+      #main_header > #gnb_container {
+            overflow: hidden;
+      }
       #main_header > #gnb_container > .main_gnb {
             display: none;
       }
@@ -229,12 +232,26 @@ ul { list-style: none; }
             display: none;
       }
       #main_header > #gnb_container > .logo {
-            text-align: left;
+            float: left;
             margin-left: 20px;
       }
       #main_header > #gnb_container > .trigger {
             display: block;
+            float: right;
+            line-height: 60px;
+            margin-right: 20px;
       }
+      #main_header > #gnb_container > .trigger .blind {
+            display: none;
+      }
+
+      #main_header > #gnb_container > .trigger .close {
+            float: right;
+            line-height: 60px;
+            margin-right: 20px;
+      }
+      
+
       #main_header > .active_path { 
             display: none;
       }

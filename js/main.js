@@ -25,12 +25,11 @@ var swiper_communi = new Swiper('.products-slider', {
 });
 
 // slick slider (Community)
-var item_name = ['사', '회', '공', '헌', '·', 'N', 'E', 'W', 'S', '·'];
 
 $('.communi-slider').slick({
       // centerPadding: '60px',
-      dots: true,
-      arrows: false,
+      dots: false,
+      arrows: true,
       infinite: true,
       speed: 800,
       autoplay: true,
@@ -40,9 +39,9 @@ $('.communi-slider').slick({
       centerMode: true,
       pauseOnHover: false,
       pauseOnFocus: false,
-      customPaging: function(slick, index) {
-            return '<a>' + (item_name[index]) + '</a>';
-      },
+      // customPaging: function(slick, index) {
+      //       return '<a>' + (item_name[index]) + '</a>';
+      // },
       responsive: [
             {
                   breakpoint: 767,
