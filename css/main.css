@@ -193,7 +193,7 @@
       align-items: center;
 }
 
-.products-slider .wrap-slider > .product-caption > div  > p {
+.products-slider .wrap-slider > .product-caption > div > p {
       font-size: 28px;
       margin-top: 20px;
       font-weight: 400;
@@ -211,6 +211,10 @@
 
 .products-slider .wrap-slider > .pd-img-bg > img {
       width: 100%;
+}
+
+.products-slider .swiper-slide-active .pd-img-bg > img {
+      animation: slideInUp 1s;
 }
 
 
@@ -254,7 +258,6 @@
 #content_community .slide-box > .slider-item > .card-img {
       display: block;
       width: 100%;
-      /* max-width: 310px; */
       overflow: hidden;
 }
 
@@ -293,25 +296,15 @@
       opacity: 1;
 }
 
-.slick-dots > li.slick-active {
-      background: #ff0000b3;
+.arrow-slider {
+      text-align: right;
+      margin-right: 30px;
 }
 
-.slick-dots > li.slick-active > a {
-      color: #fff;
-}
-
-.slick-dots > li {
-      background-color: #fff;
-      border-radius: 20px;
-      border: 2px solid #ff0000b3;
-      line-height: 20px;
-      padding: 5px;
-}
-
-.slick-dots > li > a {
-      color: #ff0000b3;
-      font-weight: 500;
+.arrow-slider .arrows .fas {
+      color: #999;
+      padding: 10px;
+      text-align: right;
 }
 
 
@@ -368,6 +361,44 @@
 
 /* 테블릿 세로 (해상도 768px ~ 1023px)*/ 
 @media all and (min-width:768px) and (max-width:1023px) { 
+      /* story */
+      #content_story > .story-caption > h1 {
+            font-size: 80px;
+      }
+      #content_story > .story-caption > span {
+            font-size: 25px;
+      }
+
+      /* products */
+      #content_products > .products-caption > h1 {
+            font-size: 80px;
+      }
+      
+      #content_products > .products-caption > span {
+            font-size: 25px;
+      }
+
+      .products-slider .wrap-slider > .product-caption > div > p {
+            font-size: 25px;
+      }
+
+      .products-slider .wrap-slider > .product-caption > .product-buttons > span {
+            font-size: 18px;
+      }
+
+      .products-slider .swiper-pagination-bullet-active {
+            font-size: 16px; 
+      }
+
+      /* community */
+      #content_community > .community-caption > h1 {
+            font-size: 80px;
+      }
+      
+      #content_community > .community-caption > span {
+            font-size: 25px;
+      }
+
       #content_community .slide-box > .slider-item > .cm-caption {
             min-height: 160px;
             box-sizing: border-box;
@@ -389,6 +420,14 @@
             font-size: 15px;
       }
 
+      #content_story > .story-area > .item > .st-caption {
+            font-size: 20px; 
+      }
+
+      #content_story > .story-area > .item > p {
+            font-size: 15px;
+      }
+
       /* products */
       #content_products > .products-slider {
             height: auto;      
@@ -403,19 +442,15 @@
 
       .products-slider .wrap-slider {
             width: 100%;
-            height: auto;
-            min-height: 480px;
-            margin: 30px 0 60px;
+            /* height: auto; */
+            /* min-height: 480px; */
+            margin: 30px 20px 80px;
             flex-direction: column;
             flex: 2 1 1;
       }
 
       .products-slider .wrap-slider > div {
             flex: 0;
-      }
-
-      #content_products .swiper-slide {
-            min-height: 510px;
       }
       
       .products-slider .wrap-slider > .product-caption {
@@ -434,6 +469,7 @@
       
       .products-slider .wrap-slider > .pd-img-bg {
             width: 100%;
+            margin-top: -45px;
       }
 
       .products-slider .wrap-slider > .pd-img-bg > img {
@@ -450,6 +486,10 @@
             margin: 0 4px;
       }
 
+      #content_products > video {
+            display: none;
+      }
+
       /* community */
       #content_community > .community-caption > h1 {
             font-size: 60px;
@@ -458,6 +498,14 @@
       #content_community > .community-caption > span {
             font-size: 15px;
       }
+
+      #content_community .slide-box > .slider-item > .cm-caption > h5 {
+            font-size: 16px;
+      }
+      
+      #content_community .slide-box > .slider-item > .cm-caption > span {
+            font-size: 14px;
+      } 
 
       /* info */
       #content_info > .info-item {
@@ -469,5 +517,17 @@
       
       #content_info > .info-item:last-child {
             border-bottom: none;
+      }
+
+      #content_info > .info-item > h5 {
+            font-size: 16px;
+            color: #fff;
+            margin: 10px 0 0;
+      }
+      
+      #content_info > .info-item > p {
+            font-size: 14px;
+            color: #999;
+            margin: 15px 0 0;
       }
 }

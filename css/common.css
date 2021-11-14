@@ -167,6 +167,35 @@ ul { list-style: none; }
       color: #ff0000b3;
 }
 
+/* 모바일 메뉴 */
+#mobile_menu {
+      background: #fff;
+      color: #222;
+      height: 100vw;
+      width: 100vw;
+      overflow: hidden;
+      position: fixed;
+      top: 60px;
+      display: none;
+}
+
+#mobile_menu > .main_gnb {
+      padding-top: 40px;
+      border-top: 1px solid #ccc;
+}
+
+#mobile_menu > .main_gnb > ul > li {
+      width: 100%;
+      padding: 20px;
+}
+
+#mobile_menu > .main_gnb > ul > li > a {
+      display: block;
+      color: #222;
+      text-decoration: none;
+      font-size: 18px;
+}
+
 
 /* 푸터 */
 #main_footer {
@@ -174,6 +203,7 @@ ul { list-style: none; }
       width: 100%;
       height: 200px;
       background-color: #fff;
+      font-size: 16px;
 }
 
 #main_footer > .address {
@@ -250,10 +280,17 @@ ul { list-style: none; }
             line-height: 60px;
             margin-right: 20px;
       }
-      
 
       #main_header > .active_path { 
             display: none;
       }
 
+      /* 푸터 */
+      #main_footer {
+            font-size: 15px;
+      }
+
+      #main_footer > .info {
+            font-size: 14px;
+      }
 } 

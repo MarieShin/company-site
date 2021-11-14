@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="./library/fontawesome-free-5.15.4-web/css/all.css">
       <link rel="stylesheet" href="./library/slick-theme.css">
       <link rel="stylesheet" href="./library/slick.css">
+      <link rel="stylesheet" href="./library/animate.css">
       <link rel="stylesheet" href="./css/common.css">
       <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -37,7 +38,7 @@
                         </ul>
                   </div>
                   <div class="trigger">
-                        <a class="mobile menu" href="#"><i class="fas fa-bars fa-lg"><span class="blind">메뉴버튼</span></i></a>
+                        <a class="mobile hamburger" href="#"><i class="fas fa-bars fa-lg"><span class="blind">메뉴버튼</span></i></a>
                         <a class="mobile close" href="#"><i class="fas fa-times fa-lg"><span class="blind">닫기버튼</span></i></a>
                   </div>
             </nav>
@@ -71,370 +72,378 @@
                   </div>
             </div>
       </header>
-      <!-- 미디어 -->
-      <section id="content_media">
-            <div class="video_container">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/zXqVIS89qLU?autoplay=1&mute=1&amp;playlist=zXqVIS89qLU&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-      </section>
-      <!-- 컨텐츠 story -->
-      <section id="content_story">
-            <div class="story-caption">
-                  <h1>STORY</h1>
-                  <span>생활 속에 향기를 드리는 기업, 동서식품입니다.</span>
-            </div>
-            <div class="story-area">
-                  <div class="item">
-                        <img src="./images/story_img_01.jpg" alt="스토리 이미지">
-                        <span class="st-caption">제품</span>
-                        <p>국내 커피 부문 1위<br/>국내 최초 캔커피 개발</p>
+      <div id="main_content">
+            <!-- 미디어 -->
+            <section id="content_media">
+                  <div class="video_container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/zXqVIS89qLU?autoplay=1&mute=1&amp;playlist=zXqVIS89qLU&amp;loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
-                  <div class="item">
-                        <img src="./images/story_img_02.jpg" alt="스토리 이미지">
-                        <span class="st-caption">환경</span>
-                        <p>동서식품은<br/>내일을 생각합니다.</p>
+            </section>
+            <!-- 컨텐츠 story -->
+            <section id="content_story">
+                  <div class="story-caption">
+                        <h1>STORY</h1>
+                        <span>생활 속에 향기를 드리는 기업, 동서식품입니다.</span>
                   </div>
-                  <div class="item">
-                        <img src="./images/story_img_03.jpg" alt="스토리 이미지">
-                        <span class="st-caption">정성</span>
-                        <p>가족이 안심하고<br />먹고 마실 수 있는 제품을<br />만든다는 생각으로<br />최선을 다합니다.</p>
-                  </div>
-            </div>
-      </section>
-      <!-- 컨텐츠 products -->
-      <section id="content_products">
-            <div class="products-caption">
-                  <h1>PRODUCTS</h1>
-                  <span>늘 고객을 생각하는 마음으로 우수한 품질의 제품을 만듭니다.</span>
-            </div>
-            <!-- swiper slider plugin -->
-            <div class="swiper-container products-slider">
-                  <div class="swiper-wrapper">
-                        <div class="swiper-slide slider1">
-                              <div class="wrap-slider">
-                                    <div class="product-caption">
-                                          <div>
-                                                <img src="./images/img_logo_maxim.png" alt="브랜드 로고 이미지">
-                                                <p>언제 어디서나 좋은 커피 맥심</p>
-                                          </div>
-                                          <div class="product-buttons">
-                                                <span>브랜드 소개</span>
-                                                <span>제품구매하기</span>
-                                          </div>
-                                    </div>
-                                    <div class="pd-img-bg">
-                                          <img src="./images/img_product_view_03.png" alt="브랜드 상품 이미지">
-                                    </div>
-                              </div>
+                  <div class="story-area">
+                        <div class="item">
+                              <img src="./images/story_img_01.jpg" alt="스토리 이미지">
+                              <span class="st-caption">제품</span>
+                              <p>국내 커피 부문 1위<br/>국내 최초 캔커피 개발</p>
                         </div>
-                        <div class="swiper-slide slider2">
-                              <div class="wrap-slider">
-                                    <div class="product-caption">
-                                          <div>
-                                                <img src="./images/img_logo_maxwell.png" alt="브랜드 로고 이미지">
-                                                <p>함께하는 즐거움</p>
-                                          </div>
-                                          <div class="product-buttons">
-                                                <span>브랜드 소개</span>
-                                                <span>제품구매하기</span>
-                                          </div>
-                                    </div>
-                                    <div class="pd-img-bg">
-                                          <img src="./images/img_product_view_04.png" alt="브랜드 상품 이미지">
-                                    </div>
-                              </div>
+                        <div class="item">
+                              <img src="./images/story_img_02.jpg" alt="스토리 이미지">
+                              <span class="st-caption">환경</span>
+                              <p>동서식품은<br/>내일을 생각합니다.</p>
                         </div>
-                        <div class="swiper-slide slider3">
-                              <div class="wrap-slider">
-                                    <div class="product-caption">
-                                          <div>
-                                                <img src="./images/img_logo_kanu.png" alt="브랜드 로고 이미지">
-                                                <p>세상에서 가장 작은 카페 맥심 카누</p>
-                                          </div>
-                                          <div class="product-buttons">
-                                                <span>브랜드 소개</span>
-                                                <span>제품구매하기</span>
-                                          </div>
-                                    </div>
-                                    <div class="pd-img-bg">
-                                          <img src="./images/img_product_view_05.png" alt="브랜드 상품 이미지">
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="swiper-slide slider4">
-                              <div class="wrap-slider">
-                                    <div class="product-caption">
-                                          <div>
-                                                <img src="./images/img_logo_top.png" alt="브랜드 로고 이미지">
-                                                <p>리얼 에스프레소</p>
-                                          </div>
-                                          <div class="product-buttons">
-                                                <span>브랜드 소개</span>
-                                                <span>제품구매하기</span>
-                                          </div>
-                                    </div>
-                                    <div class="pd-img-bg">
-                                          <img src="./images/img_product_view_06.png" alt="브랜드 상품 이미지">
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="swiper-slide slider5">
-                              <div class="wrap-slider">
-                                    <div class="product-caption">
-                                          <div>
-                                                <img src="./images/img_logo_frima.png" alt="브랜드 로고 이미지">
-                                                <p>프리마는 아내사랑입니다.</p>
-                                          </div>
-                                          <div class="product-buttons">
-                                                <span>브랜드 소개</span>
-                                                <span>제품구매하기</span>
-                                          </div>
-                                    </div>
-                                    <div class="pd-img-bg">
-                                          <img src="./images/img_product_view_07.png" alt="브랜드 상품 이미지">
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="swiper-slide slider6">
-                              <div class="wrap-slider">
-                                    <div class="product-caption">
-                                          <div>
-                                                <img src="./images/img_logo_green.png" alt="브랜드 로고 이미지">
-                                                <p>질 좋은 녹차와 현미의 부드러운 구수한 맛</p>
-                                          </div>
-                                          <div class="product-buttons">
-                                                <span>브랜드 소개</span>
-                                                <span>제품구매하기</span>
-                                          </div>
-                                    </div>
-                                    <div class="pd-img-bg">
-                                          <img src="./images/img_product_view_08.png" alt="브랜드 상품 이미지">
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="swiper-slide slider7">
-                              <div class="wrap-slider">
-                                    <div class="product-caption">
-                                          <div>
-                                                <img src="./images/img_logo_mitte.png" alt="브랜드 로고 이미지">
-                                                <p>찬바람 불 때 핫초코 미떼</p>
-                                          </div>
-                                          <div class="product-buttons">
-                                                <span>브랜드 소개</span>
-                                                <span>제품구매하기</span>
-                                          </div>
-                                    </div>
-                                    <div class="pd-img-bg">
-                                          <img src="./images/img_product_view_01.png" alt="브랜드 상품 이미지">
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="swiper-slide slider8">
-                              <div class="wrap-slider">
-                                    <div class="product-caption">
-                                          <div>
-                                                <img src="./images/img_logo_post.png" alt="브랜드 로고 이미지">
-                                                <p>좋은 아침! 좋은생각! 포스트</p>
-                                          </div>
-                                          <div class="product-buttons">
-                                                <span>브랜드 소개</span>
-                                                <span>제품구매하기</span>
-                                          </div>
-                                    </div>
-                                    <div class="pd-img-bg">
-                                          <img src="./images/img_product_view_02.png" alt="브랜드 상품 이미지">
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="swiper-slide slider9">
-                              <div class="wrap-slider">
-                                    <div class="product-caption">
-                                          <div>
-                                                <img src="./images/img_logo_oreo.png" alt="브랜드 로고 이미지">
-                                                <p>전세계인들에게 가장 사랑받는 쿠키</p>
-                                          </div>
-                                          <div class="product-buttons">
-                                                <span>브랜드 소개</span>
-                                                <span>제품구매하기</span>
-                                          </div>
-                                    </div>
-                                    <div class="pd-img-bg">
-                                          <img src="./images/img_product_view_09.png" alt="브랜드 상품 이미지">
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="swiper-slide slider10">
-                              <div class="wrap-slider">
-                                    <div class="product-caption">
-                                          <div>
-                                                <img src="./images/img_logo_philla.png" alt="브랜드 로고 이미지">
-                                                <p>듬뿍발라 더 맛있게 필라델피아 크림치즈</p>
-                                          </div>
-                                          <div class="product-buttons">
-                                                <span>브랜드 소개</span>
-                                                <span>제품구매하기</span>
-                                          </div>
-                                    </div>
-                                    <div class="pd-img-bg">
-                                          <img src="./images/img_product_view_10.png" alt="브랜드 로고 이미지">
-                                    </div>
-                              </div>
+                        <div class="item">
+                              <img src="./images/story_img_03.jpg" alt="스토리 이미지">
+                              <span class="st-caption">정성</span>
+                              <p>가족이 안심하고<br />먹고 마실 수 있는 제품을<br />만든다는 생각으로<br />최선을 다합니다.</p>
                         </div>
                   </div>
-                  <!-- swiper pagination, navigation buttons -->
-                  <div class="swiper-pagination"></div>
-                  <!-- <div class="swiper-button-next swiper-button-black"></div> -->
-                  <!-- <div class="swiper-button-prev swiper-button-black"></div> -->
-            </div>
-            <!-- 배경 비디오 -->
-            <video autoplay muted loop>
-                  <source src="./images/pexels-mike-m-5991949.mp4" type="video/mp4">
-            </video>
-      </section>
-      <!-- 컨텐츠 community -->
-      <section id="content_community">
-            <div class="community-caption">
-                  <h1>COMMUNITY</h1>
-                  <span>동서식품의 이야기를 만나보세요.</span>
-            </div>
-            <!-- slick slider plugin -->
-            <div class="communi-slider">
-                  <div class="slide-box slider1">
-                        <div class="slider-item">
-                              <div class="card-img">
-                                    <img src="./images/img_commu_01_4x5.png" alt="커뮤니티 이미지">
+            </section>
+            <!-- 컨텐츠 products -->
+            <section id="content_products">
+                  <div class="products-caption">
+                        <h1>PRODUCTS</h1>
+                        <span>늘 고객을 생각하는 마음으로 우수한 품질의 제품을 만듭니다.</span>
+                  </div>
+                  <!-- swiper slider plugin -->
+                  <div class="swiper-container products-slider">
+                        <div class="swiper-wrapper">
+                              <div class="swiper-slide slider1">
+                                    <div class="wrap-slider">
+                                          <div class="product-caption">
+                                                <div>
+                                                      <img src="./images/img_logo_maxim.png" alt="브랜드 로고 이미지">
+                                                      <p>언제 어디서나 좋은 커피 맥심</p>
+                                                </div>
+                                                <div class="product-buttons">
+                                                      <span>브랜드 소개</span>
+                                                      <span>제품구매하기</span>
+                                                </div>
+                                          </div>
+                                          <div class="pd-img-bg">
+                                                <img src="./images/img_product_view_03.png" alt="브랜드 상품 이미지">
+                                          </div>
+                                    </div>
                               </div>
-                              <div class="cm-caption">
-                                    <h5>사회공헌</h5>
-                                    <span>인생의 향기를 나누는 맥심 사람의 향기</span>
+                              <div class="swiper-slide slider2">
+                                    <div class="wrap-slider">
+                                          <div class="product-caption">
+                                                <div>
+                                                      <img src="./images/img_logo_maxwell.png" alt="브랜드 로고 이미지">
+                                                      <p>함께하는 즐거움</p>
+                                                </div>
+                                                <div class="product-buttons">
+                                                      <span>브랜드 소개</span>
+                                                      <span>제품구매하기</span>
+                                                </div>
+                                          </div>
+                                          <div class="pd-img-bg">
+                                                <img src="./images/img_product_view_04.png" alt="브랜드 상품 이미지">
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide slider3">
+                                    <div class="wrap-slider">
+                                          <div class="product-caption">
+                                                <div>
+                                                      <img src="./images/img_logo_kanu.png" alt="브랜드 로고 이미지">
+                                                      <p>세상에서 가장 작은 카페 맥심 카누</p>
+                                                </div>
+                                                <div class="product-buttons">
+                                                      <span>브랜드 소개</span>
+                                                      <span>제품구매하기</span>
+                                                </div>
+                                          </div>
+                                          <div class="pd-img-bg">
+                                                <img src="./images/img_product_view_05.png" alt="브랜드 상품 이미지">
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide slider4">
+                                    <div class="wrap-slider">
+                                          <div class="product-caption">
+                                                <div>
+                                                      <img src="./images/img_logo_top.png" alt="브랜드 로고 이미지">
+                                                      <p>리얼 에스프레소</p>
+                                                </div>
+                                                <div class="product-buttons">
+                                                      <span>브랜드 소개</span>
+                                                      <span>제품구매하기</span>
+                                                </div>
+                                          </div>
+                                          <div class="pd-img-bg">
+                                                <img src="./images/img_product_view_06.png" alt="브랜드 상품 이미지">
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide slider5">
+                                    <div class="wrap-slider">
+                                          <div class="product-caption">
+                                                <div>
+                                                      <img src="./images/img_logo_frima.png" alt="브랜드 로고 이미지">
+                                                      <p>프리마는 아내사랑입니다.</p>
+                                                </div>
+                                                <div class="product-buttons">
+                                                      <span>브랜드 소개</span>
+                                                      <span>제품구매하기</span>
+                                                </div>
+                                          </div>
+                                          <div class="pd-img-bg">
+                                                <img src="./images/img_product_view_07.png" alt="브랜드 상품 이미지">
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide slider6">
+                                    <div class="wrap-slider">
+                                          <div class="product-caption">
+                                                <div>
+                                                      <img src="./images/img_logo_green.png" alt="브랜드 로고 이미지">
+                                                      <p>질 좋은 녹차와 현미의 부드러운 구수한 맛</p>
+                                                </div>
+                                                <div class="product-buttons">
+                                                      <span>브랜드 소개</span>
+                                                      <span>제품구매하기</span>
+                                                </div>
+                                          </div>
+                                          <div class="pd-img-bg">
+                                                <img src="./images/img_product_view_08.png" alt="브랜드 상품 이미지">
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide slider7">
+                                    <div class="wrap-slider">
+                                          <div class="product-caption">
+                                                <div>
+                                                      <img src="./images/img_logo_mitte.png" alt="브랜드 로고 이미지">
+                                                      <p>찬바람 불 때 핫초코 미떼</p>
+                                                </div>
+                                                <div class="product-buttons">
+                                                      <span>브랜드 소개</span>
+                                                      <span>제품구매하기</span>
+                                                </div>
+                                          </div>
+                                          <div class="pd-img-bg">
+                                                <img src="./images/img_product_view_01.png" alt="브랜드 상품 이미지">
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide slider8">
+                                    <div class="wrap-slider">
+                                          <div class="product-caption">
+                                                <div>
+                                                      <img src="./images/img_logo_post.png" alt="브랜드 로고 이미지">
+                                                      <p>좋은 아침! 좋은생각! 포스트</p>
+                                                </div>
+                                                <div class="product-buttons">
+                                                      <span>브랜드 소개</span>
+                                                      <span>제품구매하기</span>
+                                                </div>
+                                          </div>
+                                          <div class="pd-img-bg">
+                                                <img src="./images/img_product_view_02.png" alt="브랜드 상품 이미지">
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide slider9">
+                                    <div class="wrap-slider">
+                                          <div class="product-caption">
+                                                <div>
+                                                      <img src="./images/img_logo_oreo.png" alt="브랜드 로고 이미지">
+                                                      <p>전세계인들에게 가장 사랑받는 쿠키</p>
+                                                </div>
+                                                <div class="product-buttons">
+                                                      <span>브랜드 소개</span>
+                                                      <span>제품구매하기</span>
+                                                </div>
+                                          </div>
+                                          <div class="pd-img-bg">
+                                                <img src="./images/img_product_view_09.png" alt="브랜드 상품 이미지">
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide slider10">
+                                    <div class="wrap-slider">
+                                          <div class="product-caption">
+                                                <div>
+                                                      <img src="./images/img_logo_philla.png" alt="브랜드 로고 이미지">
+                                                      <p>듬뿍발라 더 맛있게 필라델피아 크림치즈</p>
+                                                </div>
+                                                <div class="product-buttons">
+                                                      <span>브랜드 소개</span>
+                                                      <span>제품구매하기</span>
+                                                </div>
+                                          </div>
+                                          <div class="pd-img-bg">
+                                                <img src="./images/img_product_view_10.png" alt="브랜드 로고 이미지">
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <!-- swiper pagination, navigation buttons -->
+                        <div class="swiper-pagination"></div>
+                        <!-- <div class="swiper-button-next swiper-button-black"></div> -->
+                        <!-- <div class="swiper-button-prev swiper-button-black"></div> -->
+                  </div>
+                  <!-- 배경 비디오 -->
+                  <video autoplay muted loop>
+                        <source src="./images/pexels-mike-m-5991949.mp4" type="video/mp4">
+                  </video>
+            </section>
+            <!-- 컨텐츠 community -->
+            <section id="content_community">
+                  <div class="community-caption">
+                        <h1>COMMUNITY</h1>
+                        <span>동서식품의 이야기를 만나보세요.</span>
+                  </div>
+                  <!-- slick slider plugin -->
+                  <div class="arrow-slider">
+                        <span class="arrows" id="aro_prev"><i class="fas fa-long-arrow-alt-left fa-3x"></i></span>
+                        <span class="arrows" id="aro_next"><i class="fas fa-long-arrow-alt-right fa-3x"></i></span>
+                  </div>
+                  <div class="communi-slider">
+                        <div class="slide-box slider1">
+                              <div class="slider-item">
+                                    <div class="card-img">
+                                          <img src="./images/img_commu_01_4x5.png" alt="커뮤니티 이미지">
+                                    </div>
+                                    <div class="cm-caption">
+                                          <h5>사회공헌</h5>
+                                          <span>인생의 향기를 나누는 맥심 사람의 향기</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="slide-box slider2">
+                              <div class="slider-item">
+                                    <div class="card-img">
+                                          <img src="./images/img_commu_02_4x5.png" alt="커뮤니티 이미지">
+                                    </div>
+                                    <div class="cm-caption">
+                                          <h5>사회공헌</h5>
+                                          <span>인재를 양성하여 국가 발전에 기여하는 동서식품 장학회</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="slide-box slider3">
+                              <div class="slider-item">
+                                    <div class="card-img">
+                                          <img src="./images/img_commu_03_4x5.png" alt="커뮤니티 이미지">
+                                    </div>
+                                    <div class="cm-caption">
+                                          <h5>사회공헌</h5>
+                                          <span>국내 바둑 최강자를 가리는 맥심커피배 입신최강전</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="slide-box slider4">
+                              <div class="slider-item">
+                                    <div class="card-img">
+                                          <img src="./images/img_commu_04_4x5.png" alt="커뮤니티 이미지">
+                                    </div>
+                                    <div class="cm-caption">
+                                          <h5>사회공헌</h5>
+                                          <span>여성들의 문학활동을 지원하는 삶의향기 동서문학상</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="slide-box slider5">
+                              <div class="slider-item">
+                                    <div class="card-img">
+                                          <img src="./images/img_commu_05_4x5.png" alt="커뮤니티 이미지">
+                                    </div>
+                                    <div class="cm-caption">
+                                          <h5>사회공헌</h5>
+                                          <span>어린이들의 생각과 꿈을 키울 수 있도록 독서 환경을 조성하는 사회공헌</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="slide-box slider6">
+                              <div class="slider-item">
+                                    <div class="card-img">
+                                          <img src="./images/img_product_view_01.png" alt="커뮤니티 이미지">       
+                                    </div>
+                                    <div class="cm-caption">
+                                          <h5>뉴스</h5>
+                                          <span>동서식품, 신제품 '미떼 핫초코 민트초코'출시</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="slide-box slider7">
+                              <div class="slider-item">
+                                    <div class="card-img">
+                                          <img src="./images/img_commu_07_4x5.png" alt="커뮤니티 이미지">
+                                    </div>
+                                    <div class="cm-caption">
+                                          <h5>뉴스</h5>
+                                          <span>동서식품, 컵 커피에 '종이 빨대'도입</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="slide-box slider8">
+                              <div class="slider-item">
+                                    <div class="card-img">
+                                          <img src="./images/img_product_view_02.png" alt="커뮤니티 이미지">
+                                    </div>
+                                    <div class="cm-caption">
+                                          <h5>뉴스</h5>
+                                          <span>동서식품, 신제품 시리얼 '포스트 듀오링 오즈'출시</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="slide-box slider9">
+                              <div class="slider-item">
+                                    <div class="card-img">
+                                          <img src="./images/img_commu_09_4x5.png" alt="커뮤니티 이미지">
+                                    </div>
+                                    <div class="cm-caption">
+                                          <h5>뉴스</h5>
+                                          <span>동서식품, '맥심 티오피 Passion for the Green!(시작해요, 친환경을 향한 열정)'프로모션 진행</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="slide-box slider10">
+                              <div class="slider-item">
+                                    <div class="card-img">
+                                          <img src="./images/img_commu_10_4x5.png" alt="커뮤니티 이미지">
+                                    </div>
+                                    <div class="cm-caption">
+                                          <h5>뉴스</h5>
+                                          <span>동서식품, '맥심 티오피 심플리스무스 플라워 피니시' 2종 출시</span>
+                                    </div>
                               </div>
                         </div>
                   </div>
-                  <div class="slide-box slider2">
-                        <div class="slider-item">
-                              <div class="card-img">
-                                    <img src="./images/img_commu_02_4x5.png" alt="커뮤니티 이미지">
-                              </div>
-                              <div class="cm-caption">
-                                    <h5>사회공헌</h5>
-                                    <span>인재를 양성하여 국가 발전에 기여하는 동서식품 장학회</span>
-                              </div>
+            </section>
+            <!-- 컨텐츠 info -->
+            <section id="content_info">
+                  <div class="info-item">
+                        <div class="icon-bg">
+                              <img src="./images/ico_info_01.png" alt="아이콘 이미지">
                         </div>
+                        <h5>NOTICE</h5>
+                        <p>동서식품은 고객님의<br />소중한 의견을 듣고 있습니다.</p>
                   </div>
-                  <div class="slide-box slider3">
-                        <div class="slider-item">
-                              <div class="card-img">
-                                    <img src="./images/img_commu_03_4x5.png" alt="커뮤니티 이미지">
-                              </div>
-                              <div class="cm-caption">
-                                    <h5>사회공헌</h5>
-                                    <span>국내 바둑 최강자를 가리는 맥심커피배 입신최강전</span>
-                              </div>
+                  <div class="info-item">
+                        <div class="icon-bg">
+                              <img src="./images/ico_info_02.png" alt="아이콘 이미지">
                         </div>
+                        <h5>FAQ</h5>
+                        <p>동서식품에 대해 많은 분들이<br />궁금해 하시는 내용입니다.</p>
                   </div>
-                  <div class="slide-box slider4">
-                        <div class="slider-item">
-                              <div class="card-img">
-                                    <img src="./images/img_commu_04_4x5.png" alt="커뮤니티 이미지">
-                              </div>
-                              <div class="cm-caption">
-                                    <h5>사회공헌</h5>
-                                    <span>여성들의 문학활동을 지원하는 삶의향기 동서문학상</span>
-                              </div>
+                  <div class="info-item">
+                        <div class="icon-bg">
+                              <img src="./images/ico_info_03.png" alt="아이콘 이미지">
                         </div>
+                        <h5>SHOP</h5>
+                        <p>동서식품의 신제품을<br />가장 먼저 만나보세요.</p>
                   </div>
-                  <div class="slide-box slider5">
-                        <div class="slider-item">
-                              <div class="card-img">
-                                    <img src="./images/img_commu_05_4x5.png" alt="커뮤니티 이미지">
-                              </div>
-                              <div class="cm-caption">
-                                    <h5>사회공헌</h5>
-                                    <span>어린이들의 생각과 꿈을 키울 수 있도록 독서 환경을 조성하는 사회공헌</span>
-                              </div>
-                        </div>
-                  </div>
-                  <div class="slide-box slider6">
-                        <div class="slider-item">
-                              <div class="card-img">
-                                    <img src="./images/img_product_view_01.png" alt="커뮤니티 이미지">       
-                              </div>
-                              <div class="cm-caption">
-                                    <h5>뉴스</h5>
-                                    <span>동서식품, 신제품 '미떼 핫초코 민트초코'출시</span>
-                              </div>
-                        </div>
-                  </div>
-                  <div class="slide-box slider7">
-                        <div class="slider-item">
-                              <div class="card-img">
-                                    <img src="./images/img_commu_07_4x5.png" alt="커뮤니티 이미지">
-                              </div>
-                              <div class="cm-caption">
-                                    <h5>뉴스</h5>
-                                    <span>동서식품, 컵 커피에 '종이 빨대'도입</span>
-                              </div>
-                        </div>
-                  </div>
-                  <div class="slide-box slider8">
-                        <div class="slider-item">
-                              <div class="card-img">
-                                    <img src="./images/img_product_view_02.png" alt="커뮤니티 이미지">
-                              </div>
-                              <div class="cm-caption">
-                                    <h5>뉴스</h5>
-                                    <span>동서식품, 신제품 시리얼 '포스트 듀오링 오즈'출시</span>
-                              </div>
-                        </div>
-                  </div>
-                  <div class="slide-box slider9">
-                        <div class="slider-item">
-                              <div class="card-img">
-                                    <img src="./images/img_commu_09_4x5.png" alt="커뮤니티 이미지">
-                              </div>
-                              <div class="cm-caption">
-                                    <h5>뉴스</h5>
-                                    <span>동서식품, '맥심 티오피 Passion for the Green!(시작해요, 친환경을 향한 열정)'프로모션 진행</span>
-                              </div>
-                        </div>
-                  </div>
-                  <div class="slide-box slider10">
-                        <div class="slider-item">
-                              <div class="card-img">
-                                    <img src="./images/img_commu_10_4x5.png" alt="커뮤니티 이미지">
-                              </div>
-                              <div class="cm-caption">
-                                    <h5>뉴스</h5>
-                                    <span>동서식품, '맥심 티오피 심플리스무스 플라워 피니시' 2종 출시</span>
-                              </div>
-                        </div>
-                  </div>
-            </div>
-      </section>
-      <!-- 컨텐츠 info -->
-      <section id="content_info">
-            <div class="info-item">
-                  <div class="icon-bg">
-                        <img src="./images/ico_info_01.png" alt="아이콘 이미지">
-                  </div>
-                  <h5>NOTICE</h5>
-                  <p>동서식품은 고객님의<br />소중한 의견을 듣고 있습니다.</p>
-            </div>
-            <div class="info-item">
-                  <div class="icon-bg">
-                        <img src="./images/ico_info_02.png" alt="아이콘 이미지">
-                  </div>
-                  <h5>FAQ</h5>
-                  <p>동서식품에 대해 많은 분들이<br />궁금해 하시는 내용입니다.</p>
-            </div>
-            <div class="info-item">
-                  <div class="icon-bg">
-                        <img src="./images/ico_info_03.png" alt="아이콘 이미지">
-                  </div>
-                  <h5>SHOP</h5>
-                  <p>동서식품의 신제품을<br />가장 먼저 만나보세요.</p>
-            </div>
-      </section>
+            </section>
+      </div>
+      <!-- 모바일 메뉴 -->
+      <div id="mobile_menu"></div>
       <!-- 푸터 -->
       <footer id="main_footer">
             <div class="address">
@@ -457,6 +466,7 @@
 <script src="./library/swiper.min.js"></script>
 <script src="./library/slick.min.js"></script>
 <!-- js -->
+<script src="./js/common.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>
