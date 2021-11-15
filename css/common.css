@@ -187,6 +187,7 @@ ul { list-style: none; }
 #mobile_menu > .main_gnb > ul > li {
       width: 100%;
       padding: 20px;
+      border-bottom: 1px solid #f0f0f0;
 }
 
 #mobile_menu > .main_gnb > ul > li > a {
@@ -194,6 +195,7 @@ ul { list-style: none; }
       color: #222;
       text-decoration: none;
       font-size: 18px;
+      font-weight: 400;
 }
 
 
