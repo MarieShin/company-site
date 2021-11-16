@@ -124,7 +124,7 @@ ul { list-style: none; }
       width: 160px;
       height: 2px;
       margin: 0px;
-      background: #ff0000b3;
+      background: rgba(255, 0, 0, 0.70);
       display: none;
 }
 
@@ -144,7 +144,11 @@ ul { list-style: none; }
 #main_header > .lnb_container > .wrap_lnb {
       overflow: hidden;
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
 }
 
@@ -164,7 +168,7 @@ ul { list-style: none; }
 }
 
 #main_header > .lnb_container > .wrap_lnb > .lnb > div:hover {
-      color: #ff0000b3;
+      color: rgba(255, 0, 0, 0.70);
 }
 
 /* 모바일 메뉴 */

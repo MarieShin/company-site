@@ -15,10 +15,20 @@ var swiper_products = new Swiper('.products-slider', {
       },
       autoplay: {
             delay: 3000,
-            disableOnInteraction: false
+            disableOnInteraction: true
       },
-      speed: 1500,
+      speed: 2500
 });
+
+// 버튼 기능 추가
+$('.swiper-play').on("click", function() {
+      swiper_products.autoplay.start();
+});
+
+$('.swiper-pause').on("click", function() {
+      swiper_products.autoplay.stop();
+});
+
 
 /* slick slider (Community) */
 $('.communi-slider').slick({
