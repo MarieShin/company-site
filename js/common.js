@@ -28,16 +28,21 @@ $(window).resize(function() {
     var width = $(window).width();
 
     if (width > 767) {
-          if ($("#mobile_menu").is(":visible")) {
-                $(".mobile.hamburger").show();
-                $(".mobile.close").hide();
+        if ($("#mobile_menu").is(":visible")) {
+            $(".mobile.hamburger").show();
+            $(".mobile.close").hide();
 
-                $("#main_content").show();
-                $("#main_footer").show();
-                
-                $("#mobile_menu").hide();
-          }
-    } 
+            $("#main_content").show();
+            $("#main_footer").show();
+            
+            $("#mobile_menu").hide();
+        }
+    } else {
+        if ($(".lnb_container").is(":visible")) {
+            $(".lnb_container").hide();
+            $(".active_bar").hide();
+        }
+    }
 });
 
 /* 하위 메뉴, active bar */

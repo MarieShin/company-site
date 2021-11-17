@@ -50,7 +50,7 @@ $('.communi-slider').slick({
                   breakpoint: 1340,
                   settings: {
                         dots: false,
-                        slidesToShow: 4
+                        slidesToShow: 3
                   }
             },
 
