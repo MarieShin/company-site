@@ -527,7 +527,7 @@
 @media all and (max-width:767px) { 
       /* story */
       #content_story > .story-caption > h1 {
-            font-size: 60px;
+            font-size: 50px;
       }
       #content_story > .story-caption > span {
             font-size: 15px;
@@ -546,11 +546,12 @@
             height: auto;      
       }
       #content_products > .products-caption > h1 {
-            font-size: 60px;
+            font-size: 50px;
       }
       
       #content_products > .products-caption > span {
             font-size: 15px;
+            padding: 0 10px;
       }
 
       .products-slider .wrap-slider {
@@ -620,7 +621,7 @@
 
       /* community */
       #content_community > .community-caption > h1 {
-            font-size: 60px;
+            font-size: 50px;
       }
       
       #content_community > .community-caption > span {
