@@ -194,13 +194,13 @@ ul { list-style: none; }
       border-bottom: 1px solid #f0f0f0;
 }
 
-#mobile_menu > .main_gnb > ul > li > a::after {
+/* #mobile_menu > .main_gnb > ul > li > a::after {
       position: absolute;
       content: '\003E';
       right: 20px;
       top: 0;
       margin-right: 20px;
-}
+} */
 
 #mobile_menu > .main_gnb > ul > li > a {
       position: relative;
